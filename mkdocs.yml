@@ -18,6 +18,7 @@ theme:
     tabs: false
 repo_name: 'osDXP/osDXP-dashboard'
 repo_url: 'https://github.com/osdxp/osdxp-dashboard'
+edit_uri: 'edit/gh-pages/'
 extra:
   # manifest: 'manifest.webmanifest'
   social:
