@@ -1,0 +1,53 @@
+site_name: osDXP Developer Reference
+site_description: 'Documentation for osDXP developers'
+copyright: 'osDXP Developer Reference'
+site_url: 'https://osDXP-dashboard.github.io/'
+theme:
+  name: null
+  custom_dir: 'material'
+  language: 'en'
+  palette:
+    primary: 'white'
+    accent: 'indigo'
+  font:
+    text: 'Catamaran'
+    code: 'Roboto Mono'
+  logo: 'assets/images/osDXP_logo.png'
+  favicon: 'assets/images/osDXP_logo.png'
+  feature:
+    tabs: false
+repo_name: 'osDXP/osDXP-dashboard'
+repo_url: 'https://github.com/osdxp/osdxp-dashboard'
+extra:
+  # manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/osdxp'
+    - type: 'twitter'
+      link: 'https://twitter.com/osdxp'
+    - type: 'globe'
+      link: 'https://osdxp.org'
+markdown_extensions:
+    - toc:
+        permalink: True
+    - codehilite:
+        linenums: true
+
+# Nav
+nav:
+    - 'Overview': 'index.md'
+    - 'Getting Started': 'getting-started.md'
+    - 'Changelog': 'changelog.md'
+    - 'Module Guidelines': 'guidelines.md'
+    - 'Conditioning osDXP Logic': 'conditioning.md'
+    - 'Registering a Module': 'modularize.md'
+    - 'Adding a Settings Page': 'settings.md'
+    - 'Module Status Button': 'manage-button.md'
+    - 'Licensing Functionality': 'licensing.md'
+    - 'Update Functionality': 'updating.md'
+    - 'Styling': 'styling.md'
+    - 'Filter Reference': 'reference.md'
+# Google Analytics
+# google_analytics:
+#   - 'UA-XXXXXXXX-X'
+#   - 'auto'
