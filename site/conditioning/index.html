@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for osDXP developers">
       
       
-        <link rel="canonical" href="https://osDXP-dashboard.github.io/">
+        <link rel="canonical" href="https://osDXP-dashboard.github.io/conditioning/">
       
       
       
@@ -35,18 +35,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="assets/images/osDXP_logo.png">
+      <link rel="shortcut icon" href="../assets/images/osDXP_logo.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
-        <title>osDXP Developer Reference</title>
+        <title>Conditioning osDXP Logic - osDXP Developer Reference</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.4031d38b.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.4031d38b.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/application-palette.3e3d1dff.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.3e3d1dff.css">
       
       
         
@@ -55,7 +55,7 @@
       
     
     
-      <script src="assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -64,7 +64,7 @@
         <style>body,input{font-family:"Catamaran","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#overview" tabindex="1" class="md-skip">
+      <a href="#conditionally-load-osdxp-logic" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -100,7 +100,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://osDXP-dashboard.github.io/" title="osDXP Developer Reference" class="md-header-nav__button md-logo">
           
-            <img src="assets/images/osDXP_logo.png" width="auto" height="24">
+            <img src="../assets/images/osDXP_logo.png" width="auto" height="24">
           
         </a>
       </div>
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Overview
+                Conditioning osDXP Logic
               
             </span>
           
@@ -192,7 +192,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://osDXP-dashboard.github.io/" title="osDXP Developer Reference" class="md-nav__button md-logo">
       
-        <img src="assets/images/osDXP_logo.png" width="48" height="48">
+        <img src="../assets/images/osDXP_logo.png" width="48" height="48">
       
     </a>
     osDXP Developer Reference
@@ -224,6 +224,54 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href=".." title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../guidelines/" title="Module Guidelines" class="md-nav__link">
+      Module Guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -235,11 +283,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Overview
+        Conditioning osDXP Logic
       </label>
     
-    <a href="." title="Overview" class="md-nav__link md-nav__link--active">
-      Overview
+    <a href="./" title="Conditioning osDXP Logic" class="md-nav__link md-nav__link--active">
+      Conditioning osDXP Logic
     </a>
     
       
@@ -253,22 +301,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-osdxp-dashboard" class="md-nav__link">
-    What is osDXP Dashboard?
+  <a href="#constants-availability" class="md-nav__link">
+    Constants availability
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-in-touch" class="md-nav__link">
-    Get in touch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-the-latest-version" class="md-nav__link">
-    Get the latest version
+  <a href="#code-example" class="md-nav__link">
+    Code Example
   </a>
   
 </li>
@@ -290,55 +331,7 @@
 
 
   <li class="md-nav__item">
-    <a href="getting-started/" title="Getting Started" class="md-nav__link">
-      Getting Started
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="changelog/" title="Changelog" class="md-nav__link">
-      Changelog
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="guidelines/" title="Module Guidelines" class="md-nav__link">
-      Module Guidelines
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="conditioning/" title="Conditioning osDXP Logic" class="md-nav__link">
-      Conditioning osDXP Logic
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="modularize/" title="Registering a Module" class="md-nav__link">
+    <a href="../modularize/" title="Registering a Module" class="md-nav__link">
       Registering a Module
     </a>
   </li>
@@ -350,7 +343,7 @@
 
 
   <li class="md-nav__item">
-    <a href="settings/" title="Adding a Settings Page" class="md-nav__link">
+    <a href="../settings/" title="Adding a Settings Page" class="md-nav__link">
       Adding a Settings Page
     </a>
   </li>
@@ -362,7 +355,7 @@
 
 
   <li class="md-nav__item">
-    <a href="manage-button/" title="Module Status Button" class="md-nav__link">
+    <a href="../manage-button/" title="Module Status Button" class="md-nav__link">
       Module Status Button
     </a>
   </li>
@@ -374,7 +367,7 @@
 
 
   <li class="md-nav__item">
-    <a href="licensing/" title="Licensing Functionality" class="md-nav__link">
+    <a href="../licensing/" title="Licensing Functionality" class="md-nav__link">
       Licensing Functionality
     </a>
   </li>
@@ -386,7 +379,7 @@
 
 
   <li class="md-nav__item">
-    <a href="updating/" title="Update Functionality" class="md-nav__link">
+    <a href="../updating/" title="Update Functionality" class="md-nav__link">
       Update Functionality
     </a>
   </li>
@@ -398,7 +391,7 @@
 
 
   <li class="md-nav__item">
-    <a href="styling/" title="Styling" class="md-nav__link">
+    <a href="../styling/" title="Styling" class="md-nav__link">
       Styling
     </a>
   </li>
@@ -410,7 +403,7 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/" title="Filter Reference" class="md-nav__link">
+    <a href="../reference/" title="Filter Reference" class="md-nav__link">
       Filter Reference
     </a>
   </li>
@@ -437,22 +430,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-osdxp-dashboard" class="md-nav__link">
-    What is osDXP Dashboard?
+  <a href="#constants-availability" class="md-nav__link">
+    Constants availability
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-in-touch" class="md-nav__link">
-    Get in touch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-the-latest-version" class="md-nav__link">
-    Get the latest version
+  <a href="#code-example" class="md-nav__link">
+    Code Example
   </a>
   
 </li>
@@ -473,23 +459,31 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/osdxp/osdxp-dashboard/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/osdxp/osdxp-dashboard/edit/master/docs/conditioning.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-osdxp-dashboard">What is osDXP Dashboard?<a class="headerlink" href="#what-is-osdxp-dashboard" title="Permanent link">&para;</a></h2>
-<p><strong>It's a WordPress Feature plugin that creates a DXP experience, serving as a framework for osDXP modules and transforming the administrative interface into a more productive environment for the enterprise.</strong></p>
-<h2 id="get-in-touch">Get in touch<a class="headerlink" href="#get-in-touch" title="Permanent link">&para;</a></h2>
+                <h1 id="conditionally-load-osdxp-logic">Conditionally load osDXP logic<a class="headerlink" href="#conditionally-load-osdxp-logic" title="Permanent link">&para;</a></h1>
+<p><em>If conditionally loading osDXP in your <strong>premium</strong> plugin, consider having a separate type of serial number for osDXP-only content, thus having osDXP functionality be conditionally loaded only for a specific type of serial numbers.</em></p>
+<h2 id="constants-availability">Constants availability<a class="headerlink" href="#constants-availability" title="Permanent link">&para;</a></h2>
+<p>There are a number of constants defined in <strong><em>the main osDXP Dashboard Plugin file</em></strong> that you can check for in order to conditionally load your osDXP-speciffic logic. Below are two common examples and their usage.</p>
 <ul>
-<li>
-<p><a href="https://osdxp.slack.com">Chat with us on Slack</a></p>
-</li>
-<li>
-<p><a href="https://osdxp.org/faq-submission/">Ask a question/Find an answer on our Website</a></p>
-</li>
+<li><code>OSDXP_DASHBOARD_FILE</code> - the main osDXP Dashboard Plugin file</li>
+<li><code>OSDXP_DASHBOARD_VER</code> - osDXP Dashboard Plugin Version. This can be used to enforce minimum version compatibility</li>
 </ul>
-<h2 id="get-the-latest-version">Get the latest version<a class="headerlink" href="#get-the-latest-version" title="Permanent link">&para;</a></h2>
-<p><strong><a href="https://github.com/osDXP/osdxp-dashboard/releases/tag/v1.0.3">Version 1.0.3</a></strong>, available on the GitHub releases page.</p>
+<h2 id="code-example">Code Example<a class="headerlink" href="#code-example" title="Permanent link">&para;</a></h2>
+<p>Below you can find an example of conditionally loading osDXP logic based on constant availability and minimum version compatibility.</p>
+<pre class="codehilite"><code class="language-php linenums">//Check for osDXP availability
+if (defined('OSDXP_DASHBOARD_VER')) {
+    //Check for minimum required version
+    if ('1.0.3' &gt;= OSDXP_DASHBOARD_VER) {
+        //Loads osDXP-speciffic file.
+        require_once 'dxp.php';
+    } else {
+        //Gracefully fail with a notice.
+    }
+} else {
+    //Gracefully fail with a notice.
+}</code></pre>
                 
                   
                 
@@ -510,14 +504,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
+          <a href="../guidelines/" title="Module Guidelines" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Module Guidelines
+              </span>
+            </div>
+          </a>
         
-          <a href="getting-started/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../modularize/" title="Registering a Module" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Getting Started
+                Registering a Module
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -544,7 +552,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/osdxp" class="md-footer-social__link fa fa-github"></a>
     
@@ -560,11 +568,11 @@
       
     </div>
     
-      <script src="assets/javascripts/application.718059d6.js"></script>
+      <script src="../assets/javascripts/application.718059d6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
-        <script src="search/main.js"></script>
+        <script src="../search/main.js"></script>
       
     
   </body>

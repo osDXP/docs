@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for osDXP developers">
       
       
-        <link rel="canonical" href="https://osDXP-dashboard.github.io/">
+        <link rel="canonical" href="https://osDXP-dashboard.github.io/settings/">
       
       
       
@@ -35,18 +35,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="assets/images/osDXP_logo.png">
+      <link rel="shortcut icon" href="../assets/images/osDXP_logo.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
-        <title>osDXP Developer Reference</title>
+        <title>Adding a Settings Page - osDXP Developer Reference</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.4031d38b.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.4031d38b.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/application-palette.3e3d1dff.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.3e3d1dff.css">
       
       
         
@@ -55,7 +55,7 @@
       
     
     
-      <script src="assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -64,7 +64,7 @@
         <style>body,input{font-family:"Catamaran","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#overview" tabindex="1" class="md-skip">
+      <a href="#settings-page-registration" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -100,7 +100,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://osDXP-dashboard.github.io/" title="osDXP Developer Reference" class="md-header-nav__button md-logo">
           
-            <img src="assets/images/osDXP_logo.png" width="auto" height="24">
+            <img src="../assets/images/osDXP_logo.png" width="auto" height="24">
           
         </a>
       </div>
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Overview
+                Adding a Settings Page
               
             </span>
           
@@ -192,7 +192,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://osDXP-dashboard.github.io/" title="osDXP Developer Reference" class="md-nav__button md-logo">
       
-        <img src="assets/images/osDXP_logo.png" width="48" height="48">
+        <img src="../assets/images/osDXP_logo.png" width="48" height="48">
       
     </a>
     osDXP Developer Reference
@@ -224,6 +224,78 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href=".." title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../guidelines/" title="Module Guidelines" class="md-nav__link">
+      Module Guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../conditioning/" title="Conditioning osDXP Logic" class="md-nav__link">
+      Conditioning osDXP Logic
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../modularize/" title="Registering a Module" class="md-nav__link">
+      Registering a Module
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -235,11 +307,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Overview
+        Adding a Settings Page
       </label>
     
-    <a href="." title="Overview" class="md-nav__link md-nav__link--active">
-      Overview
+    <a href="./" title="Adding a Settings Page" class="md-nav__link md-nav__link--active">
+      Adding a Settings Page
     </a>
     
       
@@ -253,22 +325,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-osdxp-dashboard" class="md-nav__link">
-    What is osDXP Dashboard?
+  <a href="#filter-definition" class="md-nav__link">
+    Filter Definition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-in-touch" class="md-nav__link">
-    Get in touch
+  <a href="#filter-parameters" class="md-nav__link">
+    Filter Parameters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-the-latest-version" class="md-nav__link">
-    Get the latest version
+  <a href="#filter-return-value" class="md-nav__link">
+    Filter Return Value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-tabs" class="md-nav__link">
+    Navigation Tabs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-code-snippet" class="md-nav__link">
+    Example Code Snippet
   </a>
   
 </li>
@@ -290,79 +376,7 @@
 
 
   <li class="md-nav__item">
-    <a href="getting-started/" title="Getting Started" class="md-nav__link">
-      Getting Started
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="changelog/" title="Changelog" class="md-nav__link">
-      Changelog
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="guidelines/" title="Module Guidelines" class="md-nav__link">
-      Module Guidelines
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="conditioning/" title="Conditioning osDXP Logic" class="md-nav__link">
-      Conditioning osDXP Logic
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="modularize/" title="Registering a Module" class="md-nav__link">
-      Registering a Module
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="settings/" title="Adding a Settings Page" class="md-nav__link">
-      Adding a Settings Page
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="manage-button/" title="Module Status Button" class="md-nav__link">
+    <a href="../manage-button/" title="Module Status Button" class="md-nav__link">
       Module Status Button
     </a>
   </li>
@@ -374,7 +388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="licensing/" title="Licensing Functionality" class="md-nav__link">
+    <a href="../licensing/" title="Licensing Functionality" class="md-nav__link">
       Licensing Functionality
     </a>
   </li>
@@ -386,7 +400,7 @@
 
 
   <li class="md-nav__item">
-    <a href="updating/" title="Update Functionality" class="md-nav__link">
+    <a href="../updating/" title="Update Functionality" class="md-nav__link">
       Update Functionality
     </a>
   </li>
@@ -398,7 +412,7 @@
 
 
   <li class="md-nav__item">
-    <a href="styling/" title="Styling" class="md-nav__link">
+    <a href="../styling/" title="Styling" class="md-nav__link">
       Styling
     </a>
   </li>
@@ -410,7 +424,7 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/" title="Filter Reference" class="md-nav__link">
+    <a href="../reference/" title="Filter Reference" class="md-nav__link">
       Filter Reference
     </a>
   </li>
@@ -437,22 +451,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-osdxp-dashboard" class="md-nav__link">
-    What is osDXP Dashboard?
+  <a href="#filter-definition" class="md-nav__link">
+    Filter Definition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-in-touch" class="md-nav__link">
-    Get in touch
+  <a href="#filter-parameters" class="md-nav__link">
+    Filter Parameters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-the-latest-version" class="md-nav__link">
-    Get the latest version
+  <a href="#filter-return-value" class="md-nav__link">
+    Filter Return Value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-tabs" class="md-nav__link">
+    Navigation Tabs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-code-snippet" class="md-nav__link">
+    Example Code Snippet
   </a>
   
 </li>
@@ -473,23 +501,80 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/osdxp/osdxp-dashboard/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/osdxp/osdxp-dashboard/edit/master/docs/settings.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-osdxp-dashboard">What is osDXP Dashboard?<a class="headerlink" href="#what-is-osdxp-dashboard" title="Permanent link">&para;</a></h2>
-<p><strong>It's a WordPress Feature plugin that creates a DXP experience, serving as a framework for osDXP modules and transforming the administrative interface into a more productive environment for the enterprise.</strong></p>
-<h2 id="get-in-touch">Get in touch<a class="headerlink" href="#get-in-touch" title="Permanent link">&para;</a></h2>
-<ul>
+                <h1 id="settings-page-registration">Settings Page Registration<a class="headerlink" href="#settings-page-registration" title="Permanent link">&para;</a></h1>
+<p>osDXP modules should only register one setting page, as a direct child to <strong>Module Settings</strong> page. These can then be categorized via navigation tabs, as documented below.</p>
+<p><strong>Top-level pages</strong> will need to <strong>provide an actionable element</strong> in order for them be accepted. As an example, a module can register a top-level page for a CTA-type element. That is to say, an outputable <em>custom post type</em> that serves as a <em>call to action</em> for your website.</p>
+<h2 id="filter-definition">Filter Definition<a class="headerlink" href="#filter-definition" title="Permanent link">&para;</a></h2>
+<p>The filter <code>osdxp_add_module_settings_page</code> should be used in order to register a settings page.</p>
+<h2 id="filter-parameters">Filter Parameters<a class="headerlink" href="#filter-parameters" title="Permanent link">&para;</a></h2>
+<p>These are based off the WordPress <code>add_menu_page()</code> &amp; <code>add_submenu_page()</code> functions.</p>
+<p><code>function</code> (callable)</p>
+<p>The function to be called to output your settings page.</p>
+<p><code>menu_slug</code> (string)</p>
+<p>The slug name to refer to this menu. It should be unique and only include lowercase alphanumeric, dashes, and underscores characters.</p>
+<p><code>parent_slug</code> (string)</p>
+<p>The parent slug name in case of a submenu or endpoint.</p>
+<p><code>page_title</code> (string)</p>
+<p>The text that is displayed in the page’s title when the menu is selected.</p>
+<p><code>menu_title</code> (string)</p>
+<p>This is the text that is seen in the menu.</p>
+<p><code>icon_url</code> (string)</p>
+<p>Accepts dashicons class, base64-encoded svg or link to an image file. Check Wordpress documentation for more in-depth information.</p>
+<p><code>type</code> (string)</p>
+<p>Page type. Accepts <code>menu</code>,<code>submenu</code> or <code>endpoint</code>.</p>
+<p><strong>Endpoint is a hidden sub-page. Use this if you want to link multiple settings pages with navtabs.</strong></p>
+<p><code>network</code> (string)</p>
+<p>Network is used if your module needs a Network Admin settings page. You have three options here.</p>
+<ol>
 <li>
-<p><a href="https://osdxp.slack.com">Chat with us on Slack</a></p>
+<p>Not using the parameter, leaving it out of your code.
+You can leave ‘network’ out of your parameters. If you do this, your settings page will only show up in the Dashboard under an individual site or in a single-site install.</p>
 </li>
 <li>
-<p><a href="https://osdxp.org/faq-submission/">Ask a question/Find an answer on our Website</a></p>
+<p><code>both</code> - Setting <code>network</code> to <code>both</code> will output your page in both individual Dashboards and under Network Admin. The use case here is you have one settings page with conditionals for network vs individual admin settings.</p>
 </li>
-</ul>
-<h2 id="get-the-latest-version">Get the latest version<a class="headerlink" href="#get-the-latest-version" title="Permanent link">&para;</a></h2>
-<p><strong><a href="https://github.com/osDXP/osdxp-dashboard/releases/tag/v1.0.3">Version 1.0.3</a></strong>, available on the GitHub releases page.</p>
+<li>
+<p><code>yes</code> - Setting <code>network</code> to <code>yes</code> will output your settings page <strong>only</strong> under Network Admin.</p>
+</li>
+</ol>
+<h2 id="filter-return-value">Filter Return Value<a class="headerlink" href="#filter-return-value" title="Permanent link">&para;</a></h2>
+<p>Your function needs to accept a <code>$pages</code> parameter of type <code>array</code>, in which you can append your page declaration. This variable must be returned by your function.</p>
+<h2 id="navigation-tabs">Navigation Tabs<a class="headerlink" href="#navigation-tabs" title="Permanent link">&para;</a></h2>
+<p>If you would like to use navtabs for your settings page, consider using the following markup. The classes used are styled to be inline with osDXP brand identity.</p>
+<pre class="codehilite"><code class="language-html linenums">&lt;ul class=&quot;osdxp-nav-tabs”&gt;
+
+    &lt;li&gt;page 1&lt;/li&gt;
+
+    &lt;li class=&quot;active”&gt;active page&lt;/li&gt;
+
+&lt;/ul&gt;</code></pre>
+
+
+<h2 id="example-code-snippet">Example Code Snippet<a class="headerlink" href="#example-code-snippet" title="Permanent link">&para;</a></h2>
+<p>Below you can find an example declaration of a settings page.</p>
+<pre class="codehilite"><code class="language-php linenums">add_filter('osdxp_add_module_settings_page', 'my_settings_page');
+
+function my_settings_page($pages) {
+    $pages[] = [
+        'function'    =&gt; 'my_settings_page_output',
+        'menu_slug'   =&gt; 'test_plugin',
+        'parent_slug' =&gt; 'parent_slug', //Default Module Settings page
+        'page_title'  =&gt; 'My Settings Page',
+        'menu_title'  =&gt; 'My Settings',
+        'type'        =&gt; 'subpage',
+        'icon_url'    =&gt; 'my-icon.png',
+        'network'     =&gt; 'both' //Default No
+   ];
+
+   return $pages;
+}
+
+function my_settings_page_output() {
+    echo 'my settings';
+}</code></pre>
                 
                   
                 
@@ -510,14 +595,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
+          <a href="../modularize/" title="Registering a Module" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Registering a Module
+              </span>
+            </div>
+          </a>
         
-          <a href="getting-started/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../manage-button/" title="Module Status Button" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Getting Started
+                Module Status Button
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -544,7 +643,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/osdxp" class="md-footer-social__link fa fa-github"></a>
     
@@ -560,11 +659,11 @@
       
     </div>
     
-      <script src="assets/javascripts/application.718059d6.js"></script>
+      <script src="../assets/javascripts/application.718059d6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
-        <script src="search/main.js"></script>
+        <script src="../search/main.js"></script>
       
     
   </body>
