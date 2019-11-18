@@ -20,7 +20,7 @@ This definition can be changed with either **your own endpoint** or with false i
 This file also provides an example for how your endpoint should structure the returned data in order for it to be parsable by the plugin.
 
 ### Addition
-Please [get in touch with us](https://osdxp.org/contact/) if you would like for your module to be appear in the default available modules endpoint.
+Please [get in touch with us](https://osdxp.org/contact/) if you would like your module to appear in the default available modules endpoint.
 
 ## Available Modules Filter
 osDXP Dashboard exposes two available filters that, when used in conjunction, allows plugins to declare themselves as modules.
