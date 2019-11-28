@@ -29,3 +29,50 @@ add_filter(
   }
 );
 ```
+
+## Dashboard Widgets
+Modules may output an osDXP Dashboard widget by using any of the following filters:
+
+* `osdxp_dashboard_editor_create_functionality` - *Create widget* for **Editor**
+
+* `osdxp_dashboard_editor_manage_functionality` - *Manage widget* for **Editor**
+
+* `osdxp_dashboard_multisite_create_functionality` - *Create widget* for **Multisite Admin**
+
+* `osdxp_dashboard_multisite_manage_functionality` - *Manage widget* for **Multisite Admin**
+
+* `osdxp_dashboard_network_create_functionality` - *Create widget* for **Network Admin**
+
+* `osdxp_dashboard_network_manage_functionality` - *Manage widget* for **Network Admin**
+
+* `osdxp_dashboard_single_create_functionality` - *Create widget* for **Single-site Admin**
+
+* `osdxp_dashboard_single_manage_functionality` - *Manage widget* for **Single-site Admin**
+
+### Filter Parameters
+You hooked function needs to accept an array `$widgets`.
+Your function needs to append to said array an array consisting of the following keys:
+
+ * `title` - Your widget title
+ * `subtitle` - Your widget subtitle
+ * `link` - Your widget link
+ * `icon` - Your widget icon in the form of a dashicons class
+ * `button_text` - Your widget button text
+
+### Filter Return Value
+Your hooked function needs to return an array of arrays consisting of aforementioned keys.
+
+### Example Code
+```php
+add_filter('osdxp_dashboard_multisite_manage_functionality', 'call_back_f2');
+function call_back_f2($example) {
+	$example[] = array(
+		'title' => 'title',
+		'subtitle' => 'subtitle',
+		'link' => self_admin_url('options.php'),
+		'icon' => 'dashicons-admin-settings',
+		'button_text' => 'button text',
+	);
+	return $example;
+}
+```

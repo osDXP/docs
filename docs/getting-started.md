@@ -15,9 +15,21 @@ This documentation is structured around the assumption that you already have the
 
  * Clone the repository in `/wp-content/plugins/osdxp-dashboard`
 
- * Install `composer` if missing.
-
  * Run `composer install`.
+
+ * Enjoy!
+
+###Building assets
+
+ * To compile source JS and SCSS files there are several options available.
+
+ * First, run `npm install` to pull missing dependencies.
+
+ * Run `npm run build` to compile development-focused, unminified files.
+
+ * Run `npm run prod` to compile production-ready, minified files.
+
+ * Run `npm run watch` or `npm run watch-prod` to compile with browsersync enabled(injecting modifications without page reload).
 
  * Enjoy!
 

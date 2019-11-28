@@ -9,4 +9,4 @@
 * [Ask a question/Find an answer on our Website](https://osdxp.org/faq-submission/)
 
 ##Get the latest version
-**[Version 1.0.3](https://github.com/osDXP/osdxp-dashboard/releases/tag/v1.0.3)**, available on the GitHub releases page.
+**[Available on the GitHub releases page](https://github.com/osDXP/osdxp-dashboard/releases/)**

@@ -87,4 +87,36 @@ Below you can find all available osDXP Dashboard filters and their documentation
     <td>osdxp_dashboard_license_data</td>
     <td>Yes</td>
   </tr>
+  <tr>
+    <td>osdxp_dashboard_editor_create_functionality</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>osdxp_dashboard_editor_manage_functionality</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>osdxp_dashboard_multisite_manage_functionality</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>osdxp_dashboard_multisite_create_functionality</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>osdxp_dashboard_network_create_functionality</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>osdxp_dashboard_network_manage_functionality</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>osdxp_dashboard_single_manage_functionality</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>osdxp_dashboard_single_create_functionality</td>
+    <td>Yes</td>
+  </tr>
 </table>
