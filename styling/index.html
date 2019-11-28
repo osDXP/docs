@@ -419,6 +419,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dashboard-widgets" class="md-nav__link">
+    Dashboard Widgets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-parameters" class="md-nav__link">
+    Filter Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-return-value_1" class="md-nav__link">
+    Filter Return Value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-code_2" class="md-nav__link">
+    Example Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -509,6 +543,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dashboard-widgets" class="md-nav__link">
+    Dashboard Widgets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-parameters" class="md-nav__link">
+    Filter Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-return-value_1" class="md-nav__link">
+    Filter Return Value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-code_2" class="md-nav__link">
+    Example Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -548,6 +616,60 @@
     return 20;
   }
 );</code></pre>
+
+
+<h2 id="dashboard-widgets">Dashboard Widgets<a class="headerlink" href="#dashboard-widgets" title="Permanent link">&para;</a></h2>
+<p>Modules may output an osDXP Dashboard widget by using any of the following filters:</p>
+<ul>
+<li>
+<p><code>osdxp_dashboard_editor_create_functionality</code> - <em>Create widget</em> for <strong>Editor</strong></p>
+</li>
+<li>
+<p><code>osdxp_dashboard_editor_manage_functionality</code> - <em>Manage widget</em> for <strong>Editor</strong></p>
+</li>
+<li>
+<p><code>osdxp_dashboard_multisite_create_functionality</code> - <em>Create widget</em> for <strong>Multisite Admin</strong></p>
+</li>
+<li>
+<p><code>osdxp_dashboard_multisite_manage_functionality</code> - <em>Manage widget</em> for <strong>Multisite Admin</strong></p>
+</li>
+<li>
+<p><code>osdxp_dashboard_network_create_functionality</code> - <em>Create widget</em> for <strong>Network Admin</strong></p>
+</li>
+<li>
+<p><code>osdxp_dashboard_network_manage_functionality</code> - <em>Manage widget</em> for <strong>Network Admin</strong></p>
+</li>
+<li>
+<p><code>osdxp_dashboard_single_create_functionality</code> - <em>Create widget</em> for <strong>Single-site Admin</strong></p>
+</li>
+<li>
+<p><code>osdxp_dashboard_single_manage_functionality</code> - <em>Manage widget</em> for <strong>Single-site Admin</strong></p>
+</li>
+</ul>
+<h3 id="filter-parameters">Filter Parameters<a class="headerlink" href="#filter-parameters" title="Permanent link">&para;</a></h3>
+<p>You hooked function needs to accept an array <code>$widgets</code>.
+Your function needs to append to said array an array consisting of the following keys:</p>
+<ul>
+<li><code>title</code> - Your widget title</li>
+<li><code>subtitle</code> - Your widget subtitle</li>
+<li><code>link</code> - Your widget link</li>
+<li><code>icon</code> - Your widget icon in the form of a dashicons class</li>
+<li><code>button_text</code> - Your widget button text</li>
+</ul>
+<h3 id="filter-return-value_1">Filter Return Value<a class="headerlink" href="#filter-return-value_1" title="Permanent link">&para;</a></h3>
+<p>Your hooked function needs to return an array of arrays consisting of aforementioned keys.</p>
+<h3 id="example-code_2">Example Code<a class="headerlink" href="#example-code_2" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-php linenums">add_filter('osdxp_dashboard_multisite_manage_functionality', 'call_back_f2');
+function call_back_f2($example) {
+    $example[] = array(
+        'title' =&gt; 'title',
+        'subtitle' =&gt; 'subtitle',
+        'link' =&gt; self_admin_url('options.php'),
+        'icon' =&gt; 'dashicons-admin-settings',
+        'button_text' =&gt; 'button text',
+    );
+    return $example;
+}</code></pre>
                 
                   
                 
