@@ -654,7 +654,7 @@ Your function needs to append to said array an array consisting of the following
 <li><code>subtitle</code> - Your widget subtitle</li>
 <li><code>link</code> - Your widget link</li>
 <li><code>icon</code> - Your widget icon in the form of a dashicons class</li>
-<li><code>button_text</code> - Your widget button text</li>
+<li><code>button_text</code> - Your widget button text - <strong>Only for manage-type widgets</strong></li>
 </ul>
 <h3 id="filter-return-value_1">Filter Return Value<a class="headerlink" href="#filter-return-value_1" title="Permanent link">&para;</a></h3>
 <p>Your hooked function needs to return an array of arrays consisting of aforementioned keys.</p>
@@ -666,7 +666,7 @@ function call_back_f2($example) {
         'subtitle' =&gt; 'subtitle',
         'link' =&gt; self_admin_url('options.php'),
         'icon' =&gt; 'dashicons-admin-settings',
-        'button_text' =&gt; 'button text',
+        'button_text' =&gt; 'button text', // For create-type widgets this does not apply
     );
     return $example;
 }</code></pre>
