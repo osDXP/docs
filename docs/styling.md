@@ -57,7 +57,7 @@ Your function needs to append to said array an array consisting of the following
  * `subtitle` - Your widget subtitle
  * `link` - Your widget link
  * `icon` - Your widget icon in the form of a dashicons class
- * `button_text` - Your widget button text
+ * `button_text` - Your widget button text - **Only for manage-type widgets**
 
 ### Filter Return Value
 Your hooked function needs to return an array of arrays consisting of aforementioned keys.
@@ -71,7 +71,7 @@ function call_back_f2($example) {
 		'subtitle' => 'subtitle',
 		'link' => self_admin_url('options.php'),
 		'icon' => 'dashicons-admin-settings',
-		'button_text' => 'button text',
+		'button_text' => 'button text', // For create-type widgets this does not apply
 	);
 	return $example;
 }

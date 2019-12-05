@@ -11,11 +11,17 @@ This documentation is structured around the assumption that you already have the
 
  * Enjoy!
 
-###Building from source
+###Via the repo
 
  * Clone the repository in `/wp-content/plugins/osdxp-dashboard`
 
  * Run `composer install`.
+
+ * Enjoy!
+
+###Via Composer
+
+ * Run `composer require osdxp/osdxp-dashboard`.
 
  * Enjoy!
 
@@ -44,4 +50,4 @@ Below you can find examples of osDXP plugin conversions, available from the [osD
  * [Login Logo for osDXP](https://github.com/osDXP/osdxp-login-logo)
 
 ##Versioning
-**osDXP Dashboard** follows RomVer. More details available [here](http://blog.legacyteam.info/2015/12/romver-romantic-versioning/).
+For transparency into our release cycle and in striving to maintain backward compatibility, **osDXP Dashboard** is maintained under [the Romantic Versioning guidelines](http://blog.legacyteam.info/2015/12/romver-romantic-versioning/). Sometimes we screw up, but we adhere to those rules whenever possible.
