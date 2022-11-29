@@ -413,16 +413,16 @@
 <p>GPL Compliant Codebase</p>
 </li>
 <li>
-<p>Php 7.2 minimum version compatibility</p>
+<p>Php 7.4 minimum version compatibility</p>
 </li>
 <li>
 <p>Detailed docblocks need to be present throughout your codebase</p>
 </li>
 <li>
-<p>Plugins must validate against an established ruleset for PHP and Javascript, passing linting tests against these rules.</p>
+<p>Plugins must validate against an established ruleset for PHP and meet ES6 standards for JavaScript, passing linting tests against these rules.</p>
 <ul>
 <li>
-<p>PSR12 is the desired PHPCS ruleset to validate against, though if you're already using the WordPress Coding Standards, you may continue to do so for each osDXP plugin release for the immediate future.</p>
+<p>The preferred PHPCS ruleset is a <a href="/docs/osdxpruleset.xml">custom one</a> made up of PSR12 and some necessary checks for WordPress security, sanitization, and prevention of deprecated code. </p>
 </li>
 <li>
 <p>Javascript should validate against ES6, at a minimum.</p>
@@ -430,7 +430,7 @@
 </ul>
 </li>
 <li>
-<p>No SaaS-ification of Client Data(No Customer Data is saved on Vendors System)</p>
+<p>No SaaS-ification of Client Data (No Customer Data is saved on Vendors System)</p>
 </li>
 <li>
 <p>Clear data privacy standards</p>
