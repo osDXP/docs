@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/osDXP_logo.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.4.3">
     
     
       
@@ -695,7 +695,7 @@
 <p>The URL endpoint should provide the module update metadata as a JSON adhering to the format outlined in this document: <a href="https://docs.google.com/spreadsheets/d/1eOBbW7Go2qEQXReOOCdidMTf_tDYRq4JfegcO1CBPIs/edit#gid=0">Plugin Update Checker JSON API reference</a>.</p>
 <h2 id="registering-the-updater">Registering the Updater<a class="headerlink" href="#registering-the-updater" title="Permanent link">&para;</a></h2>
 <p>The <code>osdxp_dashboard_plugin_update_checker_list</code> filter is used to register plugins to the osDXP update checker system.</p>
-<p>It is applied in <code>wp-content/plugins/osdxp-dashboard/includes/licensing.php</code>, <em>inside the <strong><code>init_update_checker</code></strong> method</em>.</p>
+<p>It is applied in <code>wp-content/plugins/osdxp-dashboard/includes/licensing.php</code>, <em>inside the </em><em><code>init_update_checker</code></em><em> method</em>.</p>
 <h3 id="filter-parameters">Filter Parameters<a class="headerlink" href="#filter-parameters" title="Permanent link">&para;</a></h3>
 <ol>
 <li>An array containing plugin slugs (<strong><code>array</code></strong>)</li>
@@ -720,7 +720,7 @@
 
 <h2 id="registering-the-module-file">Registering the Module File<a class="headerlink" href="#registering-the-module-file" title="Permanent link">&para;</a></h2>
 <p>The <code>osdxp_dashboard_plugin_file_{MODULE_SLUG}</code> filter is used to register the full path to your main plugin file. This is necessary for the plugin update checker to work.</p>
-<p>The filter is applied in <code>wp-content/plugins/osdxp-dashboard/includes/class-licenseapi.php</code>, <em>inside the <strong><code>initUpdateChecker</code></strong> method</em>.</p>
+<p>The filter is applied in <code>wp-content/plugins/osdxp-dashboard/includes/class-licenseapi.php</code>, <em>inside the </em><em><code>initUpdateChecker</code></em><em> method</em>.</p>
 <p><strong><code>{MODULE_SLUG}</code></strong> is your module folder name or file name if your plugin is only 1 file and stays in the root of <code>/wp-content/plugins/</code>.</p>
 <h3 id="filter-parameters_1">Filter Parameters<a class="headerlink" href="#filter-parameters_1" title="Permanent link">&para;</a></h3>
 <ol>
@@ -742,7 +742,7 @@
 <p>The <code>osdxp_dashboard_plugin_update_metadata_url_{MODULE_SLUG}</code> filter is used to register the URL to the plugin update meta.</p>
 <p>The URL endpoint should provide the module update metadata as a JSON adhering to the format outlined in this document: <a href="https://docs.google.com/spreadsheets/d/1eOBbW7Go2qEQXReOOCdidMTf_tDYRq4JfegcO1CBPIs/edit#gid=0">Plugin Update Checker JSON API reference</a>.</p>
 <p><strong>The method used to query the metadata URL is POST. Please make sure your endpoint is set up this way if you would like to use our updater.</strong></p>
-<p>The filter is applied in <code>wp-content/plugins/osdxp-dashboard/includes/class-licenseapi.php</code>, <em>inside the <strong><code>initUpdateChecker</code></strong> method</em>.</p>
+<p>The filter is applied in <code>wp-content/plugins/osdxp-dashboard/includes/class-licenseapi.php</code>, <em>inside the </em><em><code>initUpdateChecker</code></em><em> method</em>.</p>
 <p><strong><code>{MODULE_SLUG}</code></strong> is your module folder name or file name if your plugin is only 1 file and stays in the root of <code>/wp-content/plugins/</code>.</p>
 <h3 id="filter-parameters_2">Filter Parameters<a class="headerlink" href="#filter-parameters_2" title="Permanent link">&para;</a></h3>
 <ol>
@@ -858,7 +858,7 @@
     
       <script src="../assets/javascripts/application.718059d6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.1.2",url:{base:".."}})</script>
       
         <script src="../search/main.js"></script>
       

@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/osDXP_logo.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.4.3">
     
     
       
@@ -847,7 +847,7 @@
 <p>Below you can find the documentation needed to hook into osDXP licensing functionality.</p>
 <h2 id="license-key-input">License Key Input<a class="headerlink" href="#license-key-input" title="Permanent link">&para;</a></h2>
 <p>Displaying a license key input can be achieved by using the <code>osdxp_license_key_{MODULE_SLUG}</code> filter, where <strong><code>{MODULE_SLUG}</code></strong> is your module folder name or file name if your plugin is only one file and stays in the root of <code>/wp-content/plugins/</code>.</p>
-<p>Both filters are applied in <code>wp-content/plugins/osdxp-dashboard/includes/dependencies/wordpress/class-osdxp-modules-list-table.php</code>, <em>inside the <strong><em>single_row</em></strong> method</em>.</p>
+<p>Both filters are applied in <code>wp-content/plugins/osdxp-dashboard/includes/dependencies/wordpress/class-osdxp-modules-list-table.php</code>, <em>inside the </em><em><em>single_row</em></em><em> method</em>.</p>
 <h3 id="filter-parameters">Filter Parameters<a class="headerlink" href="#filter-parameters" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
@@ -893,7 +893,7 @@ function my_example_license_key($license_key) {
 
 <h2 id="license-field-markup">License Field Markup<a class="headerlink" href="#license-field-markup" title="Permanent link">&para;</a></h2>
 <p>You can customize the markup for the license key input by using the <strong><code>osdxp_dashboard_license_field_markup</code></strong> &amp; <strong><code>osdxp_dashboard_license_key_markup</code></strong> filters.</p>
-<p>The filter is applied in <code>wp-content/plugins/osdxp-dashboard/includes/dependencies/wordpress/class-osdxp-modules-list-table.php</code>, <em>inside the <strong><em>single_row</em></strong> method</em>.</p>
+<p>The filter is applied in <code>wp-content/plugins/osdxp-dashboard/includes/dependencies/wordpress/class-osdxp-modules-list-table.php</code>, <em>inside the </em><em><em>single_row</em></em><em> method</em>.</p>
 <h3 id="filter-parameters_1">Filter Parameters<a class="headerlink" href="#filter-parameters_1" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
@@ -942,9 +942,9 @@ function my_license_key_markup($key_markup, $plugin_slug) {
 <h2 id="processing-submissions">Processing Submissions<a class="headerlink" href="#processing-submissions" title="Permanent link">&para;</a></h2>
 <p>Once a license key is submitted, it is sent to a REST endpoint on the WP site and passed through to the <strong><code>osdxp_dashboard_license_submit_response</code></strong> filter, to process the license key and return a response array.</p>
 <p>This filter gives you the flexibility required to write whatever logic you need to process the submitted license key.</p>
-<p>The filter is applied in <code>wp-content/plugins/osdxp-dashboard/includes/licensing.php</code>, <em>inside the <strong><em>handle_license_submit</em></strong> method</em>.</p>
+<p>The filter is applied in <code>wp-content/plugins/osdxp-dashboard/includes/licensing.php</code>, <em>inside the </em><em><em>handle_license_submit</em></em><em> method</em>.</p>
 <p>The REST endpoint is registered by the <strong><code>register_rest_endpoints</code></strong> function and the requests to it are handled by the <strong><code>handle_license_submit</code></strong> function, both being located in <code>wp-content/plugins/osdxp-dashboard/includes/licensing.php</code>.</p>
-<p><em>The endpoint accepts <code>POST</code> requests to the following URL: <strong><em><code>/wp-json/osdxp-dashboard/v1/license/{MODULE_SLUG}/{LICENSE_KEY}</code></em></strong>.</em></p>
+<p><em>The endpoint accepts <code>POST</code> requests to the following URL: </em><em><em><code>/wp-json/osdxp-dashboard/v1/license/{MODULE_SLUG}/{LICENSE_KEY}</code></em></em><em>.</em></p>
 <p>In this convention, <strong><code>{MODULE_SLUG}</code></strong> is your module folder name or file name if your plugin is only one file and stays in the root of <code>/wp-content/plugins/</code>, and <strong><code>{LICENSE_KEY}</code></strong> is the submitted license key.</p>
 <h3 id="filter-parameters_2">Filter Parameters<a class="headerlink" href="#filter-parameters_2" title="Permanent link">&para;</a></h3>
 <ol>
@@ -1036,7 +1036,7 @@ return $response;
 <p>After a license has been added into the system, a "Remove Key" button will be displayed next to the license key. Once clicked, a confirmation popup will appear.
 If confirmed, an AJAX request will be sent to the license key removal REST endpoint, on the WP site, and passed through to the <strong><code>osdxp_dashboard_license_deletion_response</code></strong> filter to process the removal request and return a response.</p>
 <p>The REST endpoint is registered by the <strong><code>register_rest_endpoints</code></strong> function and the requests to it are handled by the <strong><code>handle_license_deletion</code></strong> function, both being located in <code>wp-content/plugins/osdxp-dashboard/includes/licensing.php</code>.</p>
-<p><em>The endpoint accepts DELETE requests  to the following URL: <strong><code>/wp-json/osdxp-dashboard/v1/license/{MODULE_SLUG}</code></strong>.</em></p>
+<p><em>The endpoint accepts DELETE requests  to the following URL: </em><em><code>/wp-json/osdxp-dashboard/v1/license/{MODULE_SLUG}</code></em><em>.</em></p>
 <p>In this convention, <strong><code>{MODULE_SLUG}</code></strong> is your module folder name or file name if your plugin is only one file and stays in the root of <code>/wp-content/plugins/</code>.</p>
 <h3 id="filter-parameters_3">Filter Parameters<a class="headerlink" href="#filter-parameters_3" title="Permanent link">&para;</a></h3>
 <ol>
@@ -1233,7 +1233,7 @@ function process_license_key_deletion($response, $plugin_slug) {
     
       <script src="../assets/javascripts/application.718059d6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.1.2",url:{base:".."}})</script>
       
         <script src="../search/main.js"></script>
       
